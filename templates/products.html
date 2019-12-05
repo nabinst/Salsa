@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <!-- Page Content -->
+  <section class="page-section" id="portfolio">
+  <div class="container">
+
+    <div class="row">
+     
+       <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+    {% for item in products %}
+
+        <div class="card mt-4">
+          <img class="card-img-top img-fluid" src="{{ item.thumbnail.url }}" alt="">
+          <div class="card-body">
+            <h3 class="card-title">{{ item.product_name }}</h3>
+            <h4>{{ item.price }}</h4>
+            <p class="card-text">{{ item.discription }}</p>
+            <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+            4.0 stars
+          </div>
+        </div>
+
+      {% endfor %}
+        <!-- /.card -->
+        
+
+
+    </div>
+  
+  
+   
+  </div>
+  <!-- /.container -->
+ 
+</section>
+<!--
+
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+-->
+{% endblock %}

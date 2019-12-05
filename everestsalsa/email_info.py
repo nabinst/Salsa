@@ -1,0 +1,5 @@
+DEFAULT_FROM_EMAIL = 'nabinst12@gmail.com'
+EMAIL_HOST_USER = 'nabinst13@gmail.com'
+EMAIL_HOST_PASSWORD = 'creativE2015'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
